@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void main () {
+    float a,b,c,x1,x2,d;
+    cout << "Ingrese los coeficientes de la ecuacino cuadratica";
+    cin >> a >> b >> c;
+    d=(b*b)-4*a*c;
+    if (d>0) {
+        cout << "Las soluciones son reales";
+		  x1= (-b+ sqrt(d))/2*a;
+    x2= (-b- sqrt(d))/2*a;
+	cout << "Las raices son: " << x1 <<x2;
+    }else{
+            if (d==0) {
+                cout << "Solo hay una solucion real";
+				  x1= (-b+ sqrt(d))/2*a;
+				 x2= (-b- sqrt(d))/2*a;
+				cout << "Las raices son: " << x1 <<x2;
+        }
+    }
+
+if (d<0)
+		cout << "Las raices son complejas, no hay solucion";
+getch ();
+}
