@@ -1,0 +1,24 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	float sueldo, mayor, menor,  n, x;
+	mayor=-1;
+	menor=100000000;
+	cout << "Por favor ingrese el sueldo de cuantos empleados quiere ingresar"<<endl;
+	cin >> n;
+	for ( x=1; x<=n; x++)
+	{ cout << "Por favor ingrese el sueldo"<<endl;
+	cin >> sueldo;
+	if (sueldo > mayor)
+		mayor=sueldo;
+	if (sueldo < menor)
+		menor=sueldo;
+	}
+	cout << "El sueldo mayor es: " << mayor<<endl;
+	cout << "El sueldo menor es; " << menor;
+	getch();
+}
